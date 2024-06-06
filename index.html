@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale1">
-        <link rel="stylesheet" href="styles.css">
-        <title>Whitney's Portfolio</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Whitney's Portfolio</title>
+</head>
 
-    <body>
-         <nav class="navbar">
-                <div class="navdiv">
-                    <div class="logo"><a href="#">Whitney's Portfolio</a></div>
-                        <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="work.html">Work</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="resume.html">Resume</a></li>
-                        </ul>
-                </div>
-        </nav>
-    </body>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Whitney's Portfolio</a></div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <main>
-        <div class="aboutme">
+        <section id="about" class="aboutme">
             <h2>About Me</h2>
-              <p>
+            <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus
                 aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci,
                 pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc,
                 at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta.
                 Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.
-              </p>
-        </div>
-               
-        <div class="work">
+            </p>
+        </section>
+        
+        <section id="work" class="work">
             <h2>Work</h2>
             <div class="container">
-                <div class="box" id="box1"><li><a href="project1.html">Future Project 1: TBD </a></li></div>
-                <div class="box" id="box2"><li><a href="project2.html">Future Project 2: TBD </a></li></div>
-                <div class="box" id="box3"><li><a href="project3.html">Future Project 3: TBD </a></li></div>
-                <div class="box" id="box4"><li><a href="project4.html">Future Project 4: TBD </a></li></div>
-        </div>      
-
-        <section class="contactme">
-            <h2>Contact Me</h>
-                <div id="contactmep">
-                    <p>330.550.0335 b_whitney@ymail.com Github</p>
-                </div>
+                <div class="box" id="box1"><a href="project1.html">Future Project 1: TBD </a></div>
+                <div class="box" id="box2"><a href="project2.html">Future Project 2: TBD </a></div>
+                <div class="box" id="box3"><a href="project3.html">Future Project 3: TBD </a></div>
+                <div class="box" id="box4"><a href="project4.html">Future Project 4: TBD </a></div>
+            </div>      
         </section>
 
+        <section id="contact" class="contactme">
+            <h2>Contact Me</h2>
+            <div id="contactmep">
+                <p>330.550.0335 b_whitney@ymail.com Github</p>
+            </div>
+        </section>
+
+        <section id="resume" class="resume">
+            <h2>Resume</h2>
+        </section>
     </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
