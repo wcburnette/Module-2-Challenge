@@ -4,36 +4,60 @@
     font-family:'Times New Roman', Times, serif;
     padding-right: 15px;
     padding-left: 15px;
+    overflow: hidden; /* Clear floats */
 }
+
 .navdiv {
-    display: flex; align-items: center; justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 .logo {
-    font-size: 30px; background-color: blueviolet; color: navy;
+    font-size: 30px;
+    background-color: blueviolet;
+    color: navy;
     text-decoration: none;
 }
-li {
-    list-style: none; display: inline-block;
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
 }
-li a{
-    color: blueviolet; font-size: 18px; font-weight: bold; margin-right: 25px;
+
+li {
+    margin-right: 25px;
+}
+
+li a {
+    color: blueviolet;
+    font-size: 18px;
+    font-weight: bold;
     text-decoration: underline;
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .box {
-    width: 150px;
+    width: calc(25% - 20px);
     height: 150px;
     text-align: center;
     background-color: black;
-    border: solid yellowgreen
+    border: solid yellowgreen;
+    margin-bottom: 20px;
 }
+
 h2 {
-    font-size: 30px; font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 p {
     font-size: 15px;
 }
