@@ -1,58 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Whitney Burnette</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Whitney's Portfolio</title>
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="navdiv">
-            <div class="logo"><a href="#">Whitney's Portfolio</a></div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
+    <header>
+        <div class="header-container">
+            <h1>Burnette Portfolio</h1>
+            <img src="avatar.jpg" alt="Profile Picture">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <main>
-        <section id="about" class="aboutme">
-            <h2>About Me</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus
-                aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci,
-                pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc,
-                at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta.
-                Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.
-            </p>
-        </section>
-        
-        <section id="work" class="work">
-            <h2>Work</h2>
-            <div class="container">
-                <div class="box" id="box1"><a href="project1.html">Future Project 1: TBD </a></div>
-                <div class="box" id="box2"><a href="project2.html">Future Project 2: TBD </a></div>
-                <div class="box" id="box3"><a href="project3.html">Future Project 3: TBD </a></div>
-                <div class="box" id="box4"><a href="project4.html">Future Project 4: TBD </a></div>
-            </div>      
-        </section>
+        <div id="about" class="container">
+            <section class="section about">
+                <h2>About Me</h2>
+            </section>
+            <div class="divider"></div>
+            <section class="section content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.
+                </p>
+            </section>
+        </div>
 
-        <section id="contact" class="contactme">
-            <h2>Contact Me</h2>
-            <div id="contactmep">
-                <p>330.550.0335 b_whitney@ymail.com Github</p>
-            </div>
-        </section>
+        <div id="work" class="container">
+            <section class="section work">
+                <h2>Work</h2>
+            </section>
+            <div class="divider"></div>
+            <section class="section content">
+                <div class="projects">
+                    <div class="project">
+                        <div class="project-details">
+                            <h3>Project 1</h3>
+                            <p>Description of Project 1 goes here.</p>
+                        </div>
+                        <a href="https://project1.com" target="_blank">
+                            <div class="project-image" style="background-image: url('projects1.jpg');"></div>
+                        </a>
+                    </div>
+                    <div class="project">
+                        <div class="project-details">
+                            <h3>Project 2</h3>
+                            <p>Description of Project 2 goes here.</p>
+                        </div>
+                        <a href="https://project2.com" target="_blank">
+                            <div class="project-image" style="background-image: url('projects2.jpg');"></div>
+                        </a>
+                    </div>
+                    <div class="project">
+                        <div class="project-details">
+                            <h3>Project 3</h3>
+                            <p>Description of Project 3 goes here.</p>
+                        </div>
+                        <a href="https://project3.com" target="_blank">
+                            <div class="project-image" style="background-image: url('projects3.jpg');"></div>
+                        </a>
+                    </div>
+                    <div class="project">
+                        <div class="project-details">
+                            <h3>Project 4</h3>
+                            <p>Description of Project 4 goes here.</p>
+                        </div>
+                        <a href="https://project4.com" target="_blank">
+                            <div class="project-image" style="background-image: url('projects4.jpg');"></div>
+                        </a>
+                    </div>
+                    <div class="project">
+                        <div class="project-details">
+                            <h3>Project 5</h3>
+                            <p>Description of Project 5 goes here.</p>
+                        </div>
+                        <a href="https://project5.com" target="_blank">
+                            <div class="project-image" style="background-image: url('projects5.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <section id="resume" class="resume">
-            <h2>Resume</h2>
-        </section>
+        <div id="contact" class="container">
+            <section class="section contact">
+                <h2>Contact Me</h2>
+            </section>
+            <div class="divider"></div>
+            <section class="section content">
+                <ul class="link-list">
+                    <li><a href="tel:555-555-5555">555-555-5555</a></li>
+                    <li><a href="mailto:b_whitney@ymail.com">b_whitney@ymail.com</a></li>
+                    <li><a href="https://github.com/">GitHub</a></li>
+                    <li><a href="https://linkedin.com/">LinkedIn</a></li>
+                </ul>
+            </section>
+        </div>
     </main>
+</body>
+</html>
+
 
     <script src="script.js"></script>
 </body>
